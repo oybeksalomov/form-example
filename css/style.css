@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  max-width: 425px;
+  margin: auto;
+  font-size: 0.9rem;
+  background-color:#dadada;
+}
+
+/*************************index.html*********************************/
+/* Navbar */
+.brandLogo {
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(104.28deg, #008000 2.08%, #CCFF33 108.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.brandNavbar {
+  z-index: 100;
+}
+
+/*Stories Bar */
+.storiesBar {
+  overflow-x: scroll;
+}
+.storiesBar::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+.storyCard {
+  width: fit-content;
+}
+.storyCardBorder {
+  padding: 2.5px;
+  background: linear-gradient(196.07deg, #008000 11.13%, #70E000 34.56%, #9EF01A 71.49%, #CCFF33 87.79%);
+}
+.userStoryCardBorder {
+  padding: 2.5px;
+  background-color: rgb(194, 194, 194);
+}
+.storyCardBorder img,
+.userStoryCircle {
+  width: 45px;
+  height: 45px;
+  padding: 2px;
+  background-color: white;
+}
+.userName,
+.userCity {
+  font-size: 0.8rem;
+}
+
+/* Post */
+.postMedia {
+  width: 100%;
+}
+.postMedia img{
+  width: 100%;
+}
+.postInfo {
+  width: 95%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  bottom: 2%;
+}
+
+/* Navigation Menu */
+.addButton {
+  padding: 2.5px;
+  background: linear-gradient(196.07deg, #008000 11.13%, #70E000 34.56%, #9EF01A 71.49%, #CCFF33 87.79%);
+}
+.addButton i {
+  color: white;
+}
+
+
+/***************************************post.html****************************************/
+/*post*/
+.leftBtn,
+.rightBtn {
+  height: 30px;
+  width: 30px;
+}
+
+/*Indecators*/
+
+.indicator i {
+  font-size: 7px;
+  opacity: 0.25;
+}
+.activeIndicator i {
+  color:#38B000;
+  font-size: 8px;
+  opacity: 1;
+}
+
+/**************************************storyUpload.html**********************/
+/* storyUploadNav */
+#storyUploader {
+  max-width: 425px;
+}
+.storyUploaded {
+  background: rgba(109, 108, 108, 0.5);
+  background-image: url("../images/story-1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.storyUploadBtn i {
+  color: white;
+}
+
+/******************************Story Show****************************/
+
+.storyShow {
+  background: rgba(109, 108, 108, 0.5);
+  background-image: url("../images/story-2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.storyProgress {
+ height: 4px;
+ background-color: rgba(255, 255, 255, 0.5);
+}
+.progressBar {
+  height: 100%;
+  width: 100%;
+}
+#storyMessage {
+  width: 95%;
+}
+.storyMessageInput {
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.storyMessageInput:focus {
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
+  border: none;
+  box-shadow: none;
+}
+.storyMessageInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.storyMessageBtn {
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+.storyMessageBtn:focus,
+.storyMessageBtn:hover,
+.storyMessageBtn:active,
+.storyMessageBtn:focus-visible,
+.storyMessageBtn:not(.btn-check)+.btn:active  {
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+
+/*********************************SearchPage***************************************/
+
+/*random posts*/
+.randomPost {
+  height: fit-content;
+}
+.randomPostMedia {
+  aspect-ratio: 1 / 1;
+}
+.randomPostMedia img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+/*****************************************notificationPage*****************************************/
+
+.notificationBg {
+  height: 100vh;
+}
+.notificationImg {
+  aspect-ratio: 1/1;
+  width: 45px;
+}
+.notificationImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+/***************************************** Instagram accaunt ******************************************/
+
+.accFollowCount p,
+.aboutUser p {
+  font-size: 14px;
+}
+.accImage img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+}
+
+.accFollowBtn {
+  background-color:#38B000;
+}
+
+.accFollowBtn,
+.accMsgBtn {
+  width: 100%;
+}
+
+.accTab>i {
+  display: none;
+}
+/* .accTab button:focus-visible, */
+.accTab button:focus{
+  color:#38B000;
+  border-radius: none;
+  
+}
+
+/***************************************** Messages Page *******************************************/
+
+.messageCount {
+  background-color:#38B000;
+  width: 25px;
+  height: 25px;
+}
+
+.messageRead {
+  color:#38B000;
+}
+.messageCount p {
+  font-size: 0.8rem;
+}
+
+.messageCountRead {
+  visibility: hidden;
+}
+
+/***********************************************chat Page ************************************************/
+
+.chatDate {
+  font-size: 0.8rem;
+}
+.chatCol p {
+  font-size: 0.8rem;
+}
+
+.chatCol {
+  width: fit-content;
+  max-width: 80%;
+  
+}
+.chatColOwner {
+  background-color:#38B000;
+}
+
+.chatMsgBtn {
+  background-color:#38B000;
+  width: 30px;
+  height: 30px;
+}
+
+.chatMsgSend input:focus-visible {
+  /* border: 0; */
+  outline: none;
+}
+
+.chatLeftBtn i {
+  color: rgba(38, 38, 40, 1);
+  
+}
+.chatLeftBtn {
+  background-color: #E9ECEF;
+}
+.bodyOfChat {
+  min-height: 100vh;
+}
+
+/**************************************welcome**********************************************/
+.welcome {
+  background-color:#888888;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  filter: brightness(0.5);
+}
+
+#welcomeBody {
+  max-width: 426px;
+  
+}
+.welcomeBody {
+  height: 50vh;
+}
+.logoSize {
+  font-size: 3rem;
+}
+
+/**************************************welcome**********************************************/
+
+#logRegBody {
+  max-width: 426px;
+}
+.logRegBody {
+  min-height: 100vh;
+}
+
+
+
+
+.regInput {
+  font-size: 0.9rem;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.regInput.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.regBtn {
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.regBtn:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color:#38B000;
+}
